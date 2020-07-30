@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat World</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/8f11c54eb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <img height="40" src="/logo.png" alt="logo-img">
+            <h1>Chat World</h1>
+        </div>
+
+        <div class="message_area"></div>
+        
+        <div>
+            <textarea id="textarea" minlength="50" cols="30" rows="1" placeholder="Write a message"></textarea>
+            <i id="send-icon" onclick="handleClick()" class="fas fa-arrow-circle-right fa-3x"></i>
+        </div>
+    </section>
+    <!-- LOAD CLIENT LIBRARY -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/client.js"></script>
+</body>
+</html>
